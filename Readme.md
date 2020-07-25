@@ -14,6 +14,15 @@ Ejemplo de automatización de procesos en un servidor via <b>SSH</b> con <b>Linu
 * [Caché](https://docs.python.org/3/library/functools.html)
 
 
+#### Ejecuta el proyecto
+```python
+virtualenv venv
+
+source ./venv/bin/activate
+
+python3 app.py
+```
+
 ## :memo: License
 
 Licensed under the [MIT License](./LICENSE).
