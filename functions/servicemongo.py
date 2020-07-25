@@ -1,4 +1,4 @@
-def service_mongo(session):
-    session.exec_command('systemctl status mongodb.service')
-    resultado = session.recv(1024).decode()
+def service_mongo(client):
+    stdin, stodout, stderr = client.exec_command('systemctl status mongodb.service')
+    resultado = stodout.read().decode()
     return resultado

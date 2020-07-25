@@ -1,7 +1,7 @@
 import inquirer
 from functools import lru_cache
 
-@lru_cache
+@lru_cache(maxsize=128, typed=False)
 def question():
     questions = [
             inquirer.Checkbox('procesos',

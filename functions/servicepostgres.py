@@ -1,4 +1,4 @@
-def show_potgres(session):
-    session.exec_command('systemctl status postgresql.service')
-    resultado = session.recv(1024).decode()
+def show_potgres(client):
+    stdin, stodout, stderr = client.exec_command('systemctl status postgresql.service')
+    resultado = stodout.read().decode()
     return resultado
