@@ -1,14 +1,12 @@
 from paramiko import SSHClient, AutoAddPolicy, ssh_exception
 import pyfiglet 
 from preguntas import question
-from loading import show_loading
-
 #funciones
 from functions.screenfetch import screenfetch
 from functions.servicemongo import service_mongo
 from functions.servicepostgres import show_potgres
 
-HOST = '192.168.0.28'
+HOST = ''
 
 USER = 'nelson'
 
